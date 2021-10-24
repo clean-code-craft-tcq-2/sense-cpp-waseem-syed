@@ -25,5 +25,5 @@ public:
 	Statistics()
 	{
 	}
-	Stats computeStatistics(const std::vector<float>& scoreVector);
+	static Stats computeStatistics(const std::vector<float>& scoreVector);
 };
