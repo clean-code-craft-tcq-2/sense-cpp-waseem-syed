@@ -3,14 +3,11 @@
 
 Stats Statistics::computeStatistics(const std::vector<float>& scoreVector)
 {
-	if(scoreVector.empty())
-	{
-	   Stats computedStats(-1, -1, -1);
-	}
-	else
-	{
-	   Stats computedStats(*scoreVector.begin(), *scoreVector.begin(), *scoreVector.begin());
+	Stats computedStats(-1, -1, -1);
 
+	if(false == scoreVector.empty())
+	{
+	   computedStats.m_max = computedStats.m_min = *scoreVector.begin();
 	   float sum = 0;
 	   for(unsigned int it = 0; it < scoreVector.size() ; it++)
 	   {
