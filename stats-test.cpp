@@ -28,8 +28,6 @@ TEST_CASE("average is NaN for empty array") {
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
-    EmailAlert emailAlert;
-    LEDAlert ledAlert;
    EmailAlert emailAlert;
    LEDAlert ledAlert;
    Alerter alerter(emailAlert, ledAlert);
